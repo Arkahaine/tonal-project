@@ -1,0 +1,43 @@
+raw_daily_data:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/tonal_exams.csv
+
+shaped_datas:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/transform_data.csv
+
+x_train:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/training_data_X.csv
+
+y_train:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/training_data_Y.csv
+
+x_test:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/test_data_X.csv
+
+y_test:
+  type: pandas.CSVDataset
+  filepath: data/05_model_input/test_data_Y.csv
+
+model_trained:
+  type: pickle.PickleDataset
+  filepath: data/06_models/model_trained.pkl
+
+model_final:
+  type: pickle.PickleDataset
+  filepath: data/06_models/model_final.pkl
+
+raw_data_to_predict:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/raw_data_to_predict.csv
+
+data_to_predict:
+  type: pandas.CSVDataset
+  filepath: data/07_model_input/data_to_predict.csv
+
+data_predicted:
+  type: pandas.CSVDataset
+  filepath: data/07_model_output/predictions.csv

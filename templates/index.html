@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Prediction</title>
+</head>
+<body>
+    <h1>Enter Audiometric Data for Prediction</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.before_exam_125_Hz.label }}<br>
+            {{ form.before_exam_125_Hz(size=20) }}
+        </div>
+        <div>
+            {{ form.before_exam_250_Hz.label }}<br>
+            {{ form.before_exam_250_Hz(size=20) }}
+        </div>
+        <div>
+            {{ form.before_exam_500_Hz.label }}<br>
+            {{ form.before_exam_500_Hz(size=20) }}
+        </div>
+        <div>
+            {{ form.before_exam_1000_Hz.label }}<br>
+            {{ form.before_exam_1000_Hz(size=20) }}
+        </div>
+        <div>
+            {{ form.before_exam_2000_Hz.label }}<br>
+            {{ form.before_exam_2000_Hz(size=20) }}
+        </div>
+        <div>
+            {{ form.before_exam_4000_Hz.label }}<br>
+            {{ form.before_exam_4000_Hz(size=20) }}
+        </div>
+        <div>
+            {{ form.before_exam_8000_Hz.label }}<br>
+            {{ form.before_exam_8000_Hz(size=20) }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction Result</h2>
+        <pre>{{ prediction }}</pre>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"raw_daily_data": {"rows": 10000, "columns": 14, "file_size": 407484}, "shaped_datas": {"rows": 7391, "columns": 6, "file_size": 226566}, "x_train": {"rows": 5912, "columns": 3, "file_size": 95485}, "x_test": {"rows": 1479, "columns": 3, "file_size": 23930}, "y_train": {"rows": 5912, "columns": 3, "file_size": 91664}, "y_test": {"rows": 1479, "columns": 3, "file_size": 22998}}

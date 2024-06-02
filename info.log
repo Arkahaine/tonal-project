@@ -1,0 +1,322 @@
+2024-05-28 18:18:05,842 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-05-28 18:18:06,590 - kedro.framework.cli.utils - WARNING - Failed to load kedro_viz.launchers.cli commands from EntryPoint(name='kedro-viz', value='kedro_viz.launchers.cli:viz_cli', group='kedro.global_commands'). Full exception: No module named 'pydantic_core._pydantic_core'
+2024-05-28 18:18:27,587 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-05-28 18:18:28,241 - kedro.framework.cli.utils - WARNING - Failed to load kedro_viz.launchers.cli commands from EntryPoint(name='kedro-viz', value='kedro_viz.launchers.cli:viz_cli', group='kedro.global_commands'). Full exception: No module named 'pydantic_core._pydantic_core'
+2024-05-28 18:18:28,368 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro_viz\integrations\kedro\hooks.py:20: KedroDeprecationWarning: 'TRANSCODING_SEPARATOR' has been moved to 'kedro.pipeline.transcoding', and the alias will be removed in Kedro 0.20.0
+  from kedro.pipeline.pipeline import TRANSCODING_SEPARATOR, _strip_transcoding
+
+2024-05-28 18:18:28,439 - kedro.framework.session.session - INFO - Kedro project my-project
+2024-05-28 18:18:28,521 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py:432: UserWarning: An error occurred while importing the 'tonal_project.pipelines.model_creation' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\multiarray.py", line 10, in <module>
+    from . import overrides
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.8 from "C:\Users\arkah\miniconda3\python.exe"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: No module named 'numpy.core._multiarray_umath'
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py", line 424, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Users\arkah\miniconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_creation\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_creation\pipeline.py", line 7, in <module>
+    from .nodes import train_model
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_creation\nodes.py", line 5, in <module>
+    from keras import layers, regularizers, optimizers, metrics, Model
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\__init__.py", line 10, in <module>
+    from keras.api import *  # noqa: F403
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\api\__init__.py", line 8, in <module>
+    from keras.api import activations
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\api\activations\__init__.py", line 7, in <module>
+    from keras.src.activations import deserialize
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\__init__.py", line 1, in <module>
+    from keras.src import activations
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\activations\__init__.py", line 3, in <module>
+    from keras.src.activations.activations import elu
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\activations\activations.py", line 1, in <module>
+    from keras.src import backend
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\__init__.py", line 9, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\common\__init__.py", line 2, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\common\dtypes.py", line 5, in <module>
+    from keras.src.backend.common.variables import standardize_dtype
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\common\variables.py", line 1, in <module>
+    import numpy as np
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\__init__.py", line 149, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+  warnings.warn(
+
+2024-05-28 18:18:28,604 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py:432: UserWarning: An error occurred while importing the 'tonal_project.pipelines.model_evaluation' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py", line 424, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Users\arkah\miniconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_evaluation\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_evaluation\pipeline.py", line 7, in <module>
+    from .nodes import evaluate_model
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_evaluation\nodes.py", line 5, in <module>
+    import pandas as pd
+  File "C:\Users\arkah\miniconda3\lib\site-packages\pandas\__init__.py", line 32, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+  warnings.warn(
+
+2024-05-28 18:18:28,621 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py:432: UserWarning: An error occurred while importing the 'tonal_project.pipelines.preprocessing' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py", line 424, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Users\arkah\miniconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\preprocessing\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # Ensure this import is correct
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\preprocessing\pipeline.py", line 2, in <module>
+    from .nodes import preprocess_data, split_dataset
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\preprocessing\nodes.py", line 1, in <module>
+    import pandas as pd
+  File "C:\Users\arkah\miniconda3\lib\site-packages\pandas\__init__.py", line 32, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+  warnings.warn(
+
+2024-05-28 18:18:50,291 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-05-28 18:18:51,031 - kedro.framework.cli.utils - WARNING - Failed to load kedro_viz.launchers.cli commands from EntryPoint(name='kedro-viz', value='kedro_viz.launchers.cli:viz_cli', group='kedro.global_commands'). Full exception: No module named 'pydantic_core._pydantic_core'
+2024-05-28 18:18:51,147 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro_viz\integrations\kedro\hooks.py:20: KedroDeprecationWarning: 'TRANSCODING_SEPARATOR' has been moved to 'kedro.pipeline.transcoding', and the alias will be removed in Kedro 0.20.0
+  from kedro.pipeline.pipeline import TRANSCODING_SEPARATOR, _strip_transcoding
+
+2024-05-28 18:18:51,218 - kedro.framework.session.session - INFO - Kedro project my-project
+2024-05-28 18:18:51,262 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py:432: UserWarning: An error occurred while importing the 'tonal_project.pipelines.model_creation' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\multiarray.py", line 10, in <module>
+    from . import overrides
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\core\__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.8 from "C:\Users\arkah\miniconda3\python.exe"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: No module named 'numpy.core._multiarray_umath'
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py", line 424, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Users\arkah\miniconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_creation\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_creation\pipeline.py", line 7, in <module>
+    from .nodes import train_model
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_creation\nodes.py", line 5, in <module>
+    from keras import layers, regularizers, optimizers, metrics, Model
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\__init__.py", line 10, in <module>
+    from keras.api import *  # noqa: F403
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\api\__init__.py", line 8, in <module>
+    from keras.api import activations
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\api\activations\__init__.py", line 7, in <module>
+    from keras.src.activations import deserialize
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\__init__.py", line 1, in <module>
+    from keras.src import activations
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\activations\__init__.py", line 3, in <module>
+    from keras.src.activations.activations import elu
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\activations\activations.py", line 1, in <module>
+    from keras.src import backend
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\__init__.py", line 9, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\common\__init__.py", line 2, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\common\dtypes.py", line 5, in <module>
+    from keras.src.backend.common.variables import standardize_dtype
+  File "C:\Users\arkah\miniconda3\lib\site-packages\keras\src\backend\common\variables.py", line 1, in <module>
+    import numpy as np
+  File "C:\Users\arkah\miniconda3\lib\site-packages\numpy\__init__.py", line 149, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+  warnings.warn(
+
+2024-05-28 18:18:51,311 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py:432: UserWarning: An error occurred while importing the 'tonal_project.pipelines.model_evaluation' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py", line 424, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Users\arkah\miniconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_evaluation\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_evaluation\pipeline.py", line 7, in <module>
+    from .nodes import evaluate_model
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\model_evaluation\nodes.py", line 5, in <module>
+    import pandas as pd
+  File "C:\Users\arkah\miniconda3\lib\site-packages\pandas\__init__.py", line 32, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+  warnings.warn(
+
+2024-05-28 18:18:51,335 - py.warnings - WARNING - C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py:432: UserWarning: An error occurred while importing the 'tonal_project.pipelines.preprocessing' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\arkah\miniconda3\lib\site-packages\kedro\framework\project\__init__.py", line 424, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Users\arkah\miniconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\preprocessing\__init__.py", line 1, in <module>
+    from .pipeline import create_pipeline  # Ensure this import is correct
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\preprocessing\pipeline.py", line 2, in <module>
+    from .nodes import preprocess_data, split_dataset
+  File "C:\Users\arkah\Desktop\my-project\src\tonal_project\pipelines\preprocessing\nodes.py", line 1, in <module>
+    import pandas as pd
+  File "C:\Users\arkah\miniconda3\lib\site-packages\pandas\__init__.py", line 32, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+  warnings.warn(
+
+2024-06-02 16:56:37,407 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-06-02 16:57:08,506 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-06-02 16:58:18,808 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-06-02 17:00:14,581 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-06-02 17:01:48,588 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-06-02 17:06:56,390 - kedro.framework.project - INFO - Using `conf\logging.yml` as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2024-06-02 17:06:58,706 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:58,784 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:58,851 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:58,917 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:58,983 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:59,049 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:59,115 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:59,181 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:59,247 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-06-02 17:06:59,313 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 

@@ -1,0 +1,12 @@
+flask
+kedro
+kedro-viz
+mlflow
+pandas
+scikit-learn
+flask_wtf
+pyspark
+pytest
+pickle
+keras
+tensorflow

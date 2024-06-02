@@ -1,0 +1,10 @@
+digest: daa3e141
+name: dataset
+profile: '{"features_shape": [3, 7, 1], "features_size": 21, "features_nbytes": 168,
+  "targets_shape": [3, 7, 1], "targets_size": 21, "targets_nbytes": 168}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 7, 1]}}]", "targets": "[{\"type\": \"tensor\",
+  \"tensor-spec\": {\"dtype\": \"float64\", \"shape\": [-1, 7, 1]}}]"}}'
+source: '{"tags": {"mlflow.user": "arkah", "mlflow.source.name": "C:\\Users\\arkah\\miniconda3\\Scripts\\pytest",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arkah/Desktop/my-project/mlruns/0/1797891de19e451892b43b1cb73dfa26/artifacts
+end_time: 1717340825367
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1797891de19e451892b43b1cb73dfa26
+run_name: thundering-mink-286
+run_uuid: 1797891de19e451892b43b1cb73dfa26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717340817360
+status: 3
+tags: []
+user_id: arkah

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arkah/Desktop/my-project/mlruns/0/00b0b625f04f49779e5331fba5ef6142/artifacts
+end_time: 1717340522438
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 00b0b625f04f49779e5331fba5ef6142
+run_name: efficient-wren-825
+run_uuid: 00b0b625f04f49779e5331fba5ef6142
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717340511122
+status: 3
+tags: []
+user_id: arkah

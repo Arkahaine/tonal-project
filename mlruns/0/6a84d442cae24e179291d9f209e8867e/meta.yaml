@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arkah/Desktop/my-project/mlruns/0/6a84d442cae24e179291d9f209e8867e/artifacts
+end_time: 1717340831036
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6a84d442cae24e179291d9f209e8867e
+run_name: angry-cod-900
+run_uuid: 6a84d442cae24e179291d9f209e8867e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717340830118
+status: 3
+tags: []
+user_id: arkah

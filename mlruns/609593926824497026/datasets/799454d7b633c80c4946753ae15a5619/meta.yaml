@@ -1,0 +1,10 @@
+digest: 5e3a1d7a
+name: dataset
+profile: '{"features_shape": [1479, 3, 1], "features_size": 4437, "features_nbytes":
+  35496, "targets_shape": [1479, 3, 1], "targets_size": 4437, "targets_nbytes": 35496}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 3, 1]}}]", "targets": "[{\"type\": \"tensor\",
+  \"tensor-spec\": {\"dtype\": \"float64\", \"shape\": [-1, 3, 1]}}]"}}'
+source: '{"tags": {"mlflow.user": "arkah", "mlflow.source.name": "C:\\Users\\arkah\\miniconda3\\envs\\kedro_env\\Scripts\\kedro",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

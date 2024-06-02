@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arkah/Desktop/my-project/mlruns/609593926824497026/2b07b6bda8014504ac36c755ab3da0b9/artifacts
+end_time: 1716986251991
+entry_point_name: ''
+experiment_id: '609593926824497026'
+lifecycle_stage: active
+run_id: 2b07b6bda8014504ac36c755ab3da0b9
+run_name: __default__
+run_uuid: 2b07b6bda8014504ac36c755ab3da0b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716986236940
+status: 3
+tags: []
+user_id: arkah
